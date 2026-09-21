@@ -1,0 +1,23 @@
+artifact_path: file:C:/Users/ycode/Desktop/Housing Price Prediction/mlruns/1/models/m-0c2f48c99947439691fb4042f7e9bad0/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.15
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.9.1
+    skops_trusted_types: null
+mlflow_version: 3.16.1
+model_id: m-0c2f48c99947439691fb4042f7e9bad0
+model_size_bytes: 711783
+model_uuid: m-0c2f48c99947439691fb4042f7e9bad0
+prompts: null
+run_id: ab8e20bfd3d642d1ba26988af45cfb2b
+utc_time_created: '2026-09-24 17:16:02.494560'
