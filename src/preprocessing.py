@@ -11,7 +11,7 @@ def load_data():
     """Load the feature-engineered dataset."""
 
     return pd.read_csv(
-        "data/processed/train_features.csv"
+        "data/processed/train_features_no_outliers.csv"
     )
 
 
