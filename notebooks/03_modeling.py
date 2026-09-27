@@ -7,7 +7,7 @@ from sklearn.pipeline import Pipeline
 
 from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestRegressor
-from sklearn.svm import SVR
+from sklearn.ensemble import GradientBoostingRegressor
 
 from sklearn.metrics import mean_absolute_error
 from sklearn.metrics import mean_squared_error
@@ -56,11 +56,13 @@ models = {
            n_jobs=-1,
     ),
 
-    "SVR": SVR(
-         kernel="rbf",
-         C=1000,
-         epsilon=0.05,
-         gamma="scale",
+   "GradientBoosting": GradientBoostingRegressor(
+        n_estimators=200,
+        learning_rate=0.05,
+        max_depth=3,
+        min_samples_split=2,
+        min_samples_leaf=1,
+        random_state=42,
     ),
 }
 
